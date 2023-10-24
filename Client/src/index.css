@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+      @apply rounded-lg py-2 px-4 font-semibold transition-transform transform-gpu hover:scale-105;
+    }
+  
+    .btn-primary {
+      @apply bg-blue-500 text-white;
+    }
+  
+    .btn-primary:hover {
+      @apply bg-blue-600;
+    }
+  
+    .btn-secondary {
+      @apply bg-gray-500 text-white;
+    }
+  
+    .btn-secondary:hover {
+      @apply bg-gray-600;
+    }
+  }
+  
+  @layer utilities {
+    .transform-gpu {
+      transform: translateZ(0);
+    }
+  }
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  @layer components {
+    .btn {
+      @apply rounded-lg py-2 px-4 font-semibold transition-transform transform-gpu hover:scale-105;
+      color: #ffffff; /* Add this line to set text color to black */
+    }}  
